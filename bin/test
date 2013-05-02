@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require './lib/kmz'
+require './lib/img'
+require './lib/helper'
+
+
+kmz_path = "~/Downloads/GPS/margens-do-grande-lago-campinho.kmz"
+
+
+kmz_file = Kmz.new(kmz_path)
+
+create_working_env kmz_file.path
+
+get_images kmz_file
+
+#path = "/Users/pierreozoux/Documents/GPS/GPS_Overlayer/images/test.png"
+
+#crop_red path
+#est.track2rect
+
+#p "#{test.min_long},#{test.max_long}"
+#p test.min_lat
+#p test.max_lat
